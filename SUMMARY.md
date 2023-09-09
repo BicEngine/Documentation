@@ -8,6 +8,7 @@
 
 * [Image](components/image/README.md)
   * [Image Factory](components/image/image-factory.md)
+  * [Image Converter](components/image/image-converter.md)
 
 ## Other
 
