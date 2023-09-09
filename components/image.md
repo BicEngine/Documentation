@@ -2,7 +2,7 @@
 
 > _The images component is used to object-represent arbitrary image data_
 
-### Installation <a href="#installation" id="installation"></a>
+## Installation
 
 ```bash
 composer require bic-engine/image
@@ -16,7 +16,7 @@ mechanism provided by Composer.
 Read [_this article_](https://getcomposer.org/doc/00-intro.md) for more details.
 {% endhint %}
 
-### Usage
+## Usage
 
 The Image class provides abstraction over arbitrary image data.
 
@@ -35,7 +35,7 @@ $image = new Image(
 );
 ```
 
-### Pixel Formats
+## Pixel Formats
 
 By default, the image component contains several preinstalled
 popular image formats.
@@ -50,7 +50,7 @@ $bgra32 = PixelFormat::B8G8R8A8; // BGRA order, 8 bits per channel
 $abgr32 = PixelFormat::A8B8G8R8; // ABGR order, 8 bits per channel
 ```
 
-#### Custom Pixel Formats
+### Custom Pixel Formats
 
 If you have any specific custom pixel packing format (similar to
 `VK_FORMAT_R4G4B4A4_UNORM_PACK16` Vulkan format), then you can create a
@@ -78,9 +78,9 @@ $rgba16 = new UserPixelFormat(
 ```
 
 Using color masks, you can specify which bits are responsible for a specific
-color. For example, on the [Khronos Vulkan](https://registry.khronos.org/vulkan/site/spec/latest/chapters/formats.html) page there are many more
-formats supported by the video card and which can be expressed through a
-similar bit mask.
+color. For example, on the [Khronos Vulkan](https://registry.khronos.org/vulkan/site/spec/latest/chapters/formats.html)
+page there are many more formats supported by the video card and which can be
+expressed through a similar bit mask.
 
 Please note that the pixel format only applies to unpacked (non-compressed)
 image data. In particular, if the source image is packed using the DXT and/or
