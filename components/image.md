@@ -8,10 +8,7 @@ _The images component is used to object-represent arbitrary image data_
 composer require bic-engine/image
 ```
 
-> If you install this component outside an application, you must require
-> the `vendor/autoload.php` file in your code to enable the class autoloading
-> mechanism provided by Composer.
-> Read [_this article_](https://getcomposer.org/doc/00-intro.md) for more details.
+> If you install this component outside an application, you must require the `vendor/autoload.php` file in your code to enable the class autoloading mechanism provided by Composer[^1]. Read [_this article_](https://getcomposer.org/doc/00-intro.md) for more details.
 
 ### Usage
 
@@ -34,8 +31,7 @@ $image = new Image(
 
 ### Pixel Formats
 
-By default, the image component contains several preinstalled
-popular image formats.
+By default, the image component contains several preinstalled popular image formats.
 
 ```php
 use Bic\Image\PixelFormat;
@@ -49,9 +45,7 @@ $abgr32 = PixelFormat::A8B8G8R8; // ABGR order, 8 bits per channel
 
 #### Custom Pixel Formats
 
-If you have any specific custom pixel packing format (similar to
-`VK_FORMAT_R4G4B4A4_UNORM_PACK16` Vulkan format), then you can create a
-custom format.
+If you have any specific custom pixel packing format (similar to `VK_FORMAT_R4G4B4A4_UNORM_PACK16` Vulkan format), then you can create a custom format.
 
 ```php
 use Bic\Image\PixelFormat\ColorInfo;
@@ -74,12 +68,8 @@ $rgba16 = new UserPixelFormat(
 );
 ```
 
-Using color masks, you can specify which bits are responsible for a specific
-color. For example, on the [Khronos Vulkan](https://registry.khronos.org/vulkan/site/spec/latest/chapters/formats.html) page there are many more
-formats supported by the video card and which can be expressed through a
-similar bit mask.
+Using color masks, you can specify which bits are responsible for a specific color. For example, on the [Khronos Vulkan](https://registry.khronos.org/vulkan/site/spec/latest/chapters/formats.html) page there are many more formats supported by the video card and which can be expressed through a similar bit mask.
 
-Please note that the pixel format only applies to unpacked (non-compressed)
-image data. In particular, if the source image is packed using the DXT and/or
-BCx (DX10) algorithm (DDS image format), then the pixel format is responsible
-for the pixel format after decomressing the data into a bitmap.
+Please note that the pixel format only applies to unpacked (non-compressed) image data. In particular, if the source image is packed using the DXT and/or BCx (DX10) algorithm (DDS image format), then the pixel format is responsible for the pixel format after decomressing the data into a bitmap.
+
+[^1]: A Dependency Manager for PHP
