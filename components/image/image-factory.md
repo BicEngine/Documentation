@@ -1,6 +1,6 @@
 # Image Factory
 
-> _The image factory component is used to creating images from arbitrary source payload_
+> _The image factory component is used to creating images from arbitrary source payload._
 
 ## Installation
 
@@ -52,7 +52,7 @@ In addition to the result, this method can return the following exceptions:
 
 * `Bic\Image\Factory\Exception\FileNonReadableException` — In case of file cannot be read (for example, there is not enough permission to read the file).
 * `Bic\Image\Factory\Exception\FileNotFoundException` — In case of file not found.
-* `Bic\Image\Factory\Exception\NotDecodableException`— In case of image cannot be decoded (for example, if there is no corresponding decoder that can read a given file format).
+* `Bic\Image\Factory\Exception\NotDecodableException` — In case of image cannot be decoded (for example, if there is no corresponding decoder that can read a given file format).
 
 {% hint style="danger" %}
 Please note that some low-level decorders may not support [PHP Protocols](https://www.php.net/manual/en/wrappers.php) such as `http://` or `memory://`, so their use is **not recommended**.
@@ -85,7 +85,7 @@ In addition to the result, this method can return the following exceptions:
 
 * `Bic\Image\Factory\Exception\NonReadableException` — In case of stream cannot be read.
 * `Bic\Image\Factory\Exception\NonSeekableException` — In case of offset of the stream cannot be received.
-* `Bic\Image\Factory\Exception\NotDecodableException`— In case of image cannot be decoded (for example, if there is no corresponding decoder that can read a given format).
+* `Bic\Image\Factory\Exception\NotDecodableException` — In case of image cannot be decoded (for example, if there is no corresponding decoder that can read a given format).
 
 ### Binary String Source
 
@@ -103,6 +103,6 @@ foreach ($images as $image) {
 
 In addition to the result, this method can return the following exceptions:
 
-* `Bic\Image\Factory\Exception\NotDecodableException`— In case of image cannot be decoded (for example, if there is no corresponding decoder that can read a given format).
+* `Bic\Image\Factory\Exception\NotDecodableException` — In case of image cannot be decoded (for example, if there is no corresponding decoder that can read a given format).
 
 [^1]: A Dependency Manager for PHP

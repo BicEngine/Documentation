@@ -1,6 +1,6 @@
 # Image
 
-> _The images component is used to object-represent arbitrary image data_
+> _The images component is used to object-represent arbitrary image data._
 
 ## Installation
 

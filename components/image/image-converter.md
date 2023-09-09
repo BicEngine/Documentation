@@ -1,6 +1,6 @@
 # Image Converter
 
-> _The image converter component is used to convert image pixel formats_
+> _The image converter component is used to convert image pixel formats._
 
 ## Installation
 
