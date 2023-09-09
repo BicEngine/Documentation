@@ -6,7 +6,8 @@
 
 ## Components
 
-* [Image](components/image.md)
+* [Image](components/image/README.md)
+  * [Image Factory](components/image/image-factory.md)
 
 ## Other
 
